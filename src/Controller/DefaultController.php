@@ -20,7 +20,7 @@ class DefaultController extends Controller
     {
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
-            'foobar' => $myMethods->hello(),
+            'foobar' => $myMethods,
         ]);
     }
 }
