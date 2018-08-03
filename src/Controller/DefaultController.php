@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\myFunctions\Month;
 use App\myFunctions\myMethods;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,11 +17,14 @@ class DefaultController extends Controller
      *
      * @return Response
      */
-    public function index(myMethods $myMethods): Response
+    public function index(myMethods $myMethods, Month $month): Response
     {
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
             'foobar' => $myMethods,
+            'month' => $month,
         ]);
     }
 }
+
+

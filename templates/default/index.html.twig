@@ -16,6 +16,9 @@
         <li>Your controller at <code><a href="{{ 'src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
         <li>Your template at <code><a href="{{ 'templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
         <li>and that text from `myMethods` service <code>{{ foobar.hello() }}</code></li>
+        <li>and current month is <code>{{ month.currentMonth() }}</code></li>
+        <li>and next month is <code>{{  month.nextMonth() }}</code></li>
+        <li>and previous month is <code>{{  month.previousMonth() }}</code></li>
     </ul>
 </div>
 {% endblock %}
